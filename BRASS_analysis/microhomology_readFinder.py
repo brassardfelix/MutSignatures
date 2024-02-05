@@ -1,5 +1,7 @@
 import pandas as pd
 import pysam
 
-samfile = pysam.AlignmentFile(bam_file, "rb" )
+
+### Test sample ###
+samfile = pysam.AlignmentFile('../../cancer/HAP1/HRN_T6_C12_2-1707693.bam', "rb" )
 
