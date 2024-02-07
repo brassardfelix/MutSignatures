@@ -1,0 +1,4 @@
+{
+    "A1":{"genome":"GRCh37", "InputDir":"/home/racinef/marechal_vcf/", "OutputDir":"/home/racinef/SigprofilerTopography/", "jobname":"HWN_topography", "nsims":5,  "matrix":"TODO", "samples": ["new_HWN_T6_D1_2-1707692.vcf", "new_HWN_T6_D7_2-1707691.vcf", "new_HWN_T6_F2_2-1707690.vcf"]}
+
+}
