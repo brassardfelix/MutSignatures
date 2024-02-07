@@ -16,7 +16,7 @@ def main(argv):
     ### Additional parameters ###
 
     sbs_matrix_path = 'TODO' ## Needs to be ajusted in function of needs
-    samples = [] ## Needs to be ajusted in function of needs
+    samples = '' ## Needs to be ajusted in function of needs
 
     try:
         opts, args = getopt.getopt(argv,"hg:i:o:j:n:m:s",["vcf_file=", "samp="])
@@ -42,7 +42,9 @@ def main(argv):
         elif opt in ("-s", "--samples"):
             samples = arg
     
-    print(f'Strand-Coordination analysis has started for {jobname}.\n\tReference genome is {genome}.\n\tInput directory is {inputDir} and relevant samples are {samples}.\n\tOutput directory is {outputDir}.\n\tAnalyses wil be performed using the signatures shown in {sbs_matrix_path}.\n\t***ALL DBS AND SV COSMIC SIGNATURES ARE USED***\n\t{numofSimulations} simulations will be performed.\n')
+
+    sample_lst = samples.split(';')
+    print(f'Strand-Coordination analysis has started for {jobname}.\n\tReference genome is {genome}.\n\tInput directory is {inputDir} and relevant samples are {sample_lst}.\n\tOutput directory is {outputDir}.\n\tAnalyses wil be performed using the signatures shown in {sbs_matrix_path}.\n\t***ALL DBS AND SV COSMIC SIGNATURES ARE USED***\n\t{numofSimulations} simulations will be performed.\n')
 
     topography.runAnalyses(genome, 
         inputDir, 
