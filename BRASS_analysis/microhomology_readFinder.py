@@ -9,4 +9,5 @@ samfile = pysam.AlignmentFile('../../cancer/HAP1/HRN_T6_C12_2-1707693.bam', "rb"
 ### Import bedpe file for sample
 bedpe = pd.read_csv('HRN_T6_C12_2-1707693.annot.bedpe', sep='\t', header=9)
 bedpe = bedpe[bedpe['assembly_score']!='_'].reset_index()
+### this is another test
 
