@@ -55,3 +55,6 @@ def main(argv):
         sbs_signatures = sbs_matrix_path,
         samples_of_interest = samples
         )
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
