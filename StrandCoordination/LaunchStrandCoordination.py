@@ -15,8 +15,8 @@ def main(argv):
 
     ### Additional parameters ###
 
-    sbs_matrix_path = 'TODO'
-    samples = []
+    sbs_matrix_path = 'TODO' ## Needs to be ajusted in function of needs
+    samples = [] ## Needs to be ajusted in function of needs
 
     try:
         opts, args = getopt.getopt(argv,"hg:i:o:j:n:m:s",["vcf_file=", "samp="])
