@@ -42,7 +42,7 @@ def main(argv):
         elif opt in ("-s", "--samples"):
             samples = arg
     
-    print(f'Strand-Coordination analysis has started for {jobname}.\n\tReference genome is {genome}.\n\tInput directory is {inputDir} and relevant samples are {samples}.\n\tOutput directory is {outputDir}.\n\tAnalyses wil be performed using the signatures shown in {sbs_matrix_path}.\n\t***ALL DBS AND SV COSMIC SIGNATURES ARE USED***\n\t{numofSimulations} simulations will be performed.')
+    print(f'Strand-Coordination analysis has started for {jobname}.\n\tReference genome is {genome}.\n\tInput directory is {inputDir} and relevant samples are {samples}.\n\tOutput directory is {outputDir}.\n\tAnalyses wil be performed using the signatures shown in {sbs_matrix_path}.\n\t***ALL DBS AND SV COSMIC SIGNATURES ARE USED***\n\t{numofSimulations} simulations will be performed.\n')
 
     topography.runAnalyses(genome, 
         inputDir, 
