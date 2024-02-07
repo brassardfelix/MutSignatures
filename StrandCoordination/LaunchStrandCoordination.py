@@ -55,7 +55,7 @@ def main(argv):
         discreet_mode=True, #Default
         plot_processivity = True,
         sbs_signatures = sbs_matrix_path,
-        samples_of_interest = samples
+        samples_of_interest = sample_lst
         )
 
 if __name__ == '__main__':
