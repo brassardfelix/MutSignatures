@@ -52,7 +52,6 @@ def main(argv):
         jobname, 
         int(numofSimulations), 
         processivity=True,
-        discreet_mode=True, #Default
         plot_processivity = True,
         sbs_signatures = sbs_matrix_path,
         samples_of_interest = sample_lst
