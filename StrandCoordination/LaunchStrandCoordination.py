@@ -52,8 +52,11 @@ def main(argv):
         jobname, 
         int(numofSimulations), 
         processivity=True,
+        #nucleosome=True,
+        #replication_time=True,
+        #strand_bias=True,
         plot_processivity = True,
-        sbs_signatures = sbs_matrix_path,
+        #sbs_signatures = sbs_matrix_path, ## Testto see if processivity works in this instance
         samples_of_interest = sample_lst
         )
 
