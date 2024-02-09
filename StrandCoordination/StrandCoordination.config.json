@@ -1,5 +1,5 @@
 {
-    "A1":{"genome":"GRCh37", "InputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/", "OutputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/SigprofilerTopography/", "jobname":"HWN_topography", "nsims":5,  "matrix":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/HWN.SignatureMatrix.Topo.tsv", "samples": ["new_HWN_T6_D1_2-1707692.vcf", "new_HWN_T6_D7_2-1707691.vcf", "new_HWN_T6_F2_2-1707690.vcf"]},
+    "A1":{"genome":"GRCh37", "InputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/HWN/", "OutputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/SigprofilerTopography/", "jobname":"HWN_all_topography", "nsims":5,  "matrix":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/HWN.SignatureMatrix.Topo.tsv", "samples": ["new_HWN_T6_D1_2-1707692.vcf", "new_HWN_T6_D7_2-1707691.vcf", "new_HWN_T6_F2_2-1707690.vcf"]},
     
     "A2":{"genome":"GRCh37", "InputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/", "OutputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/SigprofilerTopography/", "jobname":"HWU2-2J_topography", "nsims":5,  "matrix":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/HWU2-2J.SignatureMatrix.Topo.tsv", "samples": ["HWU_UV_2-2J_T3_B11_2-2414937_S5_L002.vcf", "HWU_UV_2-2J_T3_D9_2-2414934_S2_L002.vcf", "HWU_UV_2-2J_T3_F11_2-2414935_S3_L002.vcf"]},
 
