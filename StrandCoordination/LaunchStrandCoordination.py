@@ -56,8 +56,11 @@ def main(argv):
         #replication_time=True,
         #strand_bias=True,
         plot_processivity = True,
-        #sbs_signatures = sbs_matrix_path, ## Testto see if processivity works in this instance
-        samples_of_interest = sample_lst
+        sbs_signatures = sbs_matrix_path, ## Testto see if processivity works in this instance
+        #samples_of_interest = sample_lst,
+        num_of_sbs_required = 500,
+        num_of_dbs_required = 0,
+        num_of_id_required = 0
         )
 
 if __name__ == '__main__':
