@@ -1,5 +1,6 @@
 import pandas as pd
 import json
+from tqdm import tqdm
 
 missense_reference_file = '/home/racinef/missense_data/AlphaMissense_hg38.tsv' #Absolute path for ip34
 FANC_genes = {'BRCA1':'P38398', 'BRCA2':'P51587', 'ERCC4':'Q92889', 'FANCA':'O15360', 'FANCB':'Q8NB91', 
@@ -17,7 +18,7 @@ pathogenic_muts = {}
 ambiguous_muts = {}
 benign_muts = {}
 
-for gene in FANC_genes:
+for gene in tqdm(FANC_genes):
     # Get gene specific missense table
     pathogenics = missenses[(missenses['uniprot_id'] == FANC_genes[gene]) & (missenses['am_class'] == 'likely_pathogenic')]
     ambiguous = missenses[(missenses['uniprot_id'] == FANC_genes[gene]) & (missenses['am_class'] == 'ambiguous')]
