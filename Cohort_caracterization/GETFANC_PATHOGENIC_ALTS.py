@@ -12,7 +12,9 @@ FANC_genes = {'BRCA1':'P38398', 'BRCA2':'P51587', 'ERCC4':'Q92889', 'FANCA':'O15
 def MERGE2STRING_MISSENSE(c1, c2, c3, c4):
     return str(c1)+'_'+str(c2)+'_'+str(c3)+'_'+str(c4)
 
+print('STARTING TO LOAD MISSENSE TABLE....')
 missenses = pd.read_csv(missense_reference_file, sep='\t', header=3)
+print('DONE LOADING....')
 
 pathogenic_muts = {}
 ambiguous_muts = {}
