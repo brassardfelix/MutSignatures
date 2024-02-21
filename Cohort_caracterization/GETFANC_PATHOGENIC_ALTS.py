@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-missense_reference_file = '/home/racinef/missense_data/AlphaMissense_gene_hg38.tsv' #Absolute path for ip34
+missense_reference_file = '/home/racinef/missense_data/AlphaMissense_hg38.tsv' #Absolute path for ip34
 FANC_genes = {'BRCA1':'P38398', 'BRCA2':'P51587', 'ERCC4':'Q92889', 'FANCA':'O15360', 'FANCB':'Q8NB91', 
               'FANCC':'Q00597', 'FANCD2':'Q9BXW9', 'FANCE':'Q9HB96', 'FANCF':'Q9NPI8', 'FANCG':'O15287', 
               'FANCI':'Q9NVI1', 'FANCJ':'Q9BX63', 'FANCL':'Q9NW38', 'FANCM':'Q8IYD8', 'FANCN':'Q86YC2', 
