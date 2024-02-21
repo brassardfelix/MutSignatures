@@ -1,0 +1,4 @@
+{
+    "A1":{"genome":"GRCh37", "InputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/TopoInputs/MELANOMAS/", "OutputDir":"/home/local/USHERBROOKE/racf2402/Bureau/WORKING/SigProfilerAssignment/MELANOMAS/", "context":"96", "exclude":5, "Input_type": "vcf"}
+
+}
