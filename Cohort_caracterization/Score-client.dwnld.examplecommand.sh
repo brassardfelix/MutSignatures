@@ -1,1 +1,1 @@
-nohup score-client-5.10.0/bin/score-client download --manifest ./ARGO/manifest.dwnld220224.tsv --output-dir ./ARGO/CNV_CALLS/ &
+nohup ~/score-client-5.10.0/bin/score-client download --manifest ./ARGO/manifest.dwnld220224.tsv --output-dir ./ARGO/CNV_CALLS/ &
