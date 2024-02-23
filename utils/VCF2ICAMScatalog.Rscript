@@ -1,20 +1,20 @@
 library(ICAMS)
 
-count_output_name <- 'RFWD3.ILS_fd.SBS96.table.tsv'
-density_output_name <- 'RFWD3.ILS_fd.SBS96.density.table.tsv'
-dbs_count_output_name <- 'RFWD3.ILS_fd.DBS78.table.tsv'
-indel_count_output_name <- 'RFWD3.ILS_fd.INDEL.table.tsv'
-#sbs1536_count_output_name <- 'RFWD3.ILS_fd.SBS1526.table.tsv'
+count_output_name <- 'ARGO.SBS96.table.tsv'
+density_output_name <- 'ARGO.SBS96.density.table.tsv'
+dbs_count_output_name <- 'ARGO.DBS78.table.tsv'
+#indel_count_output_name <- 'ARGO.INDEL.table.tsv'
+#sbs1536_count_output_name <- 'ARGO.SBS1526.table.tsv'
 
-path <- "/home/racinef/marechal_vcf/ILS_faible_dose/"
-files <- list.files(path)
+path <- "./"
+files <- list.files(path, pattern = "\\.vcf\\.gz$")
 
 catalog <- VCFsToCatalogs(variant.caller = "mutect",paste0(path,files),
-                      ref.genome = "GRCh37",
-                      trans.ranges = trans.ranges.GRCh37,
+                      ref.genome = "GRCh38",
+                      trans.ranges = trans.ranges.GRCh38,
                       region = "genome")
 catalog.catSBS96.density <- TransformCatalog(catalog$catSBS96,
-                                         target.ref.genome = "hg19",
+                                         target.ref.genome = "hg38",
                                          target.region = "genome",
                                          target.catalog.type = "density"
 )
@@ -26,5 +26,5 @@ rownames(catalog.catSBS96.density) <- contexts
 write.table(catalog$catSBS96, count_output_name, sep='\t')
 write.table(catalog.catSBS96.density, density_output_name, sep='\t')
 write.table(catalog$catDBS78, dbs_count_output_name, sep='\t')
-write.table(catalog$catID, indel_count_output_name, sep='\t')
+#write.table(catalog$catID, indel_count_output_name, sep='\t')
 #write.table(catalog$catSBS1536, sbs1536_count_output_name, sep='\t')
