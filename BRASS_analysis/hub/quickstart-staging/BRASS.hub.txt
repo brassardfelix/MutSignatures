@@ -1,4 +1,4 @@
-hub hub
+hub brass
 shortLabel BRASS
 longLabel BRASS
 genomesFile BRASS.genomes.txt
