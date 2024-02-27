@@ -1,4 +1,4 @@
-hub BRASS
+hub brass
 shortLabel BrassCallsVIZ
 longLabel Visualisation of the assembled reads used for BRASS calls
 genomesFile genomes.txt
