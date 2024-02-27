@@ -3,4 +3,3 @@ shortLabel BrassCallsVIZ
 longLabel Visualisation of the assembled reads used for BRASS calls
 genomesFile genomes.txt
 email felix.racine-brassard@usherbrooke.ca
-descriptionUrl BrassCallsVIZ.html 
