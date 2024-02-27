@@ -1,0 +1,5 @@
+hub hub
+shortLabel BRASS
+longLabel BRASS
+genomesFile BRASS.genomes.txt
+email felix.racine-brassard@usherbrooke.ca

@@ -1,5 +1,0 @@
-track HAP1_TP53_HU_150uM_C1
-bigDataUrl HAP1_TP53_HU_150uM_C1.picardFILTERED.bam
-shortLabel HU_C1
-longLabel HAP1_HU_C1 assembled reads from BRASS calls
-type bam

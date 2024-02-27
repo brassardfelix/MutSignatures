@@ -1,0 +1,5 @@
+track HAP1_TP53_HU_150uM_C1
+bigDataUrl HAP1_TP53_HU_150uM_C1.bam
+shortLabel HAP1_TP53_HU_150uM_C1
+longLabel HAP1_TP53_HU_150uM_C1
+type bam
